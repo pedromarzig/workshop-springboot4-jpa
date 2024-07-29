@@ -4,7 +4,7 @@
 # Sobre o projeto
 
 
-Spring Boot JPA é uma aplicação com o intuito de ensinar a conexão com bancos de dados utilizando JPA com H2 e Heroku, conforme os ensinamentos da  [DevSuperior](https://devsuperior.com "Site da DevSuperior").
+Spring Boot JPA é uma aplicação com o intuito de ensinar a conexão com banco de dados utilizando JPA com H2 e Heroku, conforme os ensinamentos da  [DevSuperior](https://devsuperior.com "Site da DevSuperior").
 
 A aplicação consiste em uma loja de pedidos online, onde os dados são listados a partir do banco de dados e exibidos via Postman.
 
