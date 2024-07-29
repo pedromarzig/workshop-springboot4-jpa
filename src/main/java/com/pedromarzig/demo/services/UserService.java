@@ -1,6 +1,5 @@
 package com.pedromarzig.demo.services;
 
-import java.lang.StackWalker.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -9,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.pedromarzig.demo.entitties.User;
 import com.pedromarzig.demo.repositories.UserRepository;
+import com.pedromarzig.demo.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class UserService {
@@ -23,7 +23,7 @@ public class UserService {
 	
 	public User findById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User insert(User obj) {
