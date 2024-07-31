@@ -18,7 +18,6 @@ A aplicação consiste em uma loja de pedidos online, onde os dados são listado
 
 ## Implantação em produção
 - Back end: Heroku
-- Front end web: Netlify
 - Banco de dados: Postgresql
 
 # Como executar o projeto
